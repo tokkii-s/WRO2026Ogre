@@ -88,8 +88,8 @@ def line_trace(distance_deg):
         left_power = clamp(base_speed + steering, -100, 100)
         right_power = clamp(base_speed - steering, -100, 100)
 
-        motor_left.dc(left_power)
-        motor_right.dc(right_power)
+        motor_left.dc(left_power * 10)
+        motor_right.dc(right_power * 10)
 
         wait(CONTROL_INTERVAL)
 
@@ -153,8 +153,8 @@ def gyro_turn(angle):
         prev_error = error
 
         # ターン: 左右モーターを逆方向に駆動
-        motor_left.dc(power)
-        motor_right.dc(-power)
+        motor_left.dc(power * 10)
+        motor_right.dc(-power * 10)
 
         wait(CONTROL_INTERVAL)
 
@@ -202,8 +202,8 @@ def gyro_straight(distance_deg):
         left_power = clamp(base_speed - steering, -100, 100)
         right_power = clamp(base_speed + steering, -100, 100)
 
-        motor_left.dc(left_power)
-        motor_right.dc(right_power)
+        motor_left.dc(left_power * 10)
+        motor_right.dc(right_power * 10)
 
         wait(CONTROL_INTERVAL)
 
