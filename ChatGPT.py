@@ -33,8 +33,8 @@ base_speed = 220
 turn_speed = 180
 
 # 反射光の最大/最小値
-MAX_REFLECTION = 85
-MIN_REFLECTION = 15
+MAX_REFLECTION = 80
+MIN_REFLECTION = 10
 
 # 制御周期
 CONTROL_INTERVAL = 20  # ms
