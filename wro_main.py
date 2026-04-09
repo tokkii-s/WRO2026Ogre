@@ -22,7 +22,7 @@ hub         = PrimeHub()
 left_motor  = Motor(Port.A, Direction.COUNTERCLOCKWISE)
 right_motor = Motor(Port.D)
 color       = ColorSensor(Port.C)
-robot       = DriveBase(left_motor, right_motor, wheel_diameter=56, axle_track=112)
+robot       = DriveBase(left_motor, right_motor, wheel_diameter=56, axle_track=192)
 
 # ============================================================
 # Constants
@@ -31,8 +31,8 @@ robot       = DriveBase(left_motor, right_motor, wheel_diameter=56, axle_track=1
 # ============================================================
 BASE_SPEED        = 200         # mm/s
 
-REFLECT_MAX       = 85          # white surface (measure on your field)
-REFLECT_MIN       = 10          # black line    (measure on your field)
+REFLECT_MAX       = 100         # white surface (measure on your field)
+REFLECT_MIN       = 16          # black line    (measure on your field)
 REFLECT_THRESHOLD = (REFLECT_MAX + REFLECT_MIN) // 2
 
 LT_KP             = 1.2
@@ -70,6 +70,7 @@ def line_trace(side: str, stop_condition) -> None:
 # ============================================================
 # Example mission sequence
 # ============================================================
+
 if __name__ == "__main__":
 
     timer = StopWatch()
