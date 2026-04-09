@@ -13,6 +13,7 @@ from pybricks.pupdevices import Motor, ColorSensor
 from pybricks.parameters import Direction, Port
 from pybricks.robotics import DriveBase
 from pybricks.tools import wait
+from pybricks.tools import StopWatch
 
 # ============================================================
 # Hardware initialization
@@ -70,7 +71,6 @@ def line_trace(side: str, stop_condition) -> None:
 # Example mission sequence
 # ============================================================
 if __name__ == "__main__":
-    from pybricks.tools import StopWatch
 
     timer = StopWatch()
 
