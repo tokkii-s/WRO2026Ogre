@@ -10,10 +10,9 @@ Port assignment:
 
 from pybricks.hubs import PrimeHub
 from pybricks.pupdevices import Motor, ColorSensor
-from pybricks.parameters import Direction, Port
+from pybricks.parameters import Direction, Port, Stop, Button, Side, Color
 from pybricks.robotics import DriveBase
-from pybricks.tools import wait
-from pybricks.tools import StopWatch
+from pybricks.tools import wait, StopWatch
 
 # ============================================================
 # Hardware initialization
