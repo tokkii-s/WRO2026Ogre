@@ -435,6 +435,7 @@ def main_second():
        wait(10)
    robot.stop()
    robot.straight(-100)
+   robot.turn(-90)
 
 
 
